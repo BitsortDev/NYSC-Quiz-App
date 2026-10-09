@@ -12,17 +12,19 @@ function PopUp({ isOpen, onClose, onProceed }) {
 
   const cleanName = name.trim();
 
-  sessionStorage.setItem("playerName", cleanName);
-  console.log(cleanName)
+ 
 
   if (!cleanName) {
     setError("Please enter your name to continue.");
     return;
   }
+
+   sessionStorage.setItem("playerName", cleanName);
+  console.log(cleanName)
   
 
   try {
-    const response = await fetch("http://localhost:8000/api/v1/users", {
+    const response = await fetch(`${process.env.REACT_APP_API_URL}/api/v1/users`, {
       method: "POST",
 
       headers: {
