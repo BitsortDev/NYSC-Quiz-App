@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "question": "Who is the current President of Nigeria?",
+    "optionA": "Bola Ahmed Tinubu",
+    "optionB": "Muhammadu Buhari",
+    "optionC": "Goodluck Jonathan",
+    "optionD": "Atiku Abubakar",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 2,
+    "question": "What does NYSC stand for?",
+    "optionA": "National Youth Service Corps",
+    "optionB": "Nigerian Youth Service Commission",
+    "optionC": "National Young Soldiers Corps",
+    "optionD": "Nigerian Youth Social Corps",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 3,
+    "question": "In what year was NYSC established?",
+    "optionA": "1960",
+    "optionB": "1973",
+    "optionC": "1980",
+    "optionD": "1999",
+    "correctAnswer": "optionB"
+  },
+  {
+    "id": 4,
+    "question": "Who established the NYSC scheme?",
+    "optionA": "Yakubu Gowon",
+    "optionB": "Murtala Mohammed",
+    "optionC": "Olusegun Obasanjo",
+    "optionD": "Shehu Shagari",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 5,
+    "question": "What is the main purpose of the NYSC scheme?",
+    "optionA": "To provide employment for graduates",
+    "optionB": "To promote national unity and integration",
+    "optionC": "To train graduates as soldiers",
+    "optionD": "To provide university education",
+    "correctAnswer": "optionB"
+  },
+  {
+    "id": 6,
+    "question": "How long is the standard NYSC service year?",
+    "optionA": "6 months",
+    "optionB": "9 months",
+    "optionC": "12 months",
+    "optionD": "18 months",
+    "correctAnswer": "optionC"
+  },
+  {
+    "id": 7,
+    "question": "What is the NYSC orientation camp period generally known as?",
+    "optionA": "Three weeks",
+    "optionB": "Two weeks",
+    "optionC": "One month",
+    "optionD": "Six weeks",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 8,
+    "question": "What does CDS stand for in NYSC?",
+    "optionA": "Community Development Schemes",
+    "optionB": "Community Development Services",
+    "optionC": "Corps Development Service",
+    "optionD": "Community Defence Service",
+    "correctAnswer": "optionB"
+  },
+  {
+    "id": 9,
+    "question": "What is one major objective of NYSC CDS?",
+    "optionA": "To promote community development",
+    "optionB": "To conduct university examinations",
+    "optionC": "To employ corps members permanently",
+    "optionD": "To train corps members as police officers",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 10,
+    "question": "What does PPA stand for in NYSC?",
+    "optionA": "Place of Public Administration",
+    "optionB": "Place of Primary Assignment",
+    "optionC": "Primary Programme Assignment",
+    "optionD": "Public Personnel Area",
+    "correctAnswer": "optionB"
+  },
+  {
+    "id": 11,
+    "question": "Which of the following is a phase of the NYSC service year?",
+    "optionA": "Orientation",
+    "optionB": "Primary Assignment",
+    "optionC": "Community Development Service",
+    "optionD": "All of the above",
+    "correctAnswer": "optionD"
+  },
+  {
+    "id": 12,
+    "question": "What is the official motto of the NYSC?",
+    "optionA": "Service and Sacrifice",
+    "optionB": "Service and Humility",
+    "optionC": "Unity and Progress",
+    "optionD": "Service and Patriotism",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 13,
+    "question": "What colour is prominently associated with the NYSC khaki uniform?",
+    "optionA": "White",
+    "optionB": "Khaki",
+    "optionC": "Blue",
+    "optionD": "Black",
+    "correctAnswer": "optionB"
+  },
+  {
+    "id": 14,
+    "question": "What does PCM stand for in NYSC?",
+    "optionA": "Prospective Corps Member",
+    "optionB": "Permanent Corps Member",
+    "optionC": "Primary Corps Manager",
+    "optionD": "Prospective Community Member",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 15,
+    "question": "What does NYSC CDS primarily encourage corps members to do?",
+    "optionA": "Develop their personal businesses only",
+    "optionB": "Contribute to the development of their host communities",
+    "optionC": "Leave their places of primary assignment",
+    "optionD": "Participate only in sporting activities",
+    "correctAnswer": "optionB"
+  },
+  {
+    "id": 16,
+    "question": "What is the capital of Nigeria?",
+    "optionA": "Lagos",
+    "optionB": "Kano",
+    "optionC": "Abuja",
+    "optionD": "Ibadan",
+    "correctAnswer": "optionC"
+  },
+  {
+    "id": 17,
+    "question": "How many states are there in Nigeria?",
+    "optionA": "30",
+    "optionB": "36",
+    "optionC": "37",
+    "optionD": "40",
+    "correctAnswer": "optionB"
+  },
+  {
+    "id": 18,
+    "question": "How many local government areas are there in Nigeria?",
+    "optionA": "774",
+    "optionB": "7740",
+    "optionC": "760",
+    "optionD": "720",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 19,
+    "question": "What is the national currency of Nigeria?",
+    "optionA": "Cedi",
+    "optionB": "Naira",
+    "optionC": "Shilling",
+    "optionD": "Dinar",
+    "correctAnswer": "optionB"
+  },
+  {
+    "id": 20,
+    "question": "What is the currency symbol for the Nigerian naira?",
+    "optionA": "$",
+    "optionB": "£",
+    "optionC": "₦",
+    "optionD": "€",
+    "correctAnswer": "optionC"
+  },
+  {
+    "id": 21,
+    "question": "When did Nigeria gain independence?",
+    "optionA": "1 October 1960",
+    "optionB": "1 January 1960",
+    "optionC": "29 May 1960",
+    "optionD": "12 December 1960",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 22,
+    "question": "Who was Nigeria's first Prime Minister?",
+    "optionA": "Nnamdi Azikiwe",
+    "optionB": "Abubakar Tafawa Balewa",
+    "optionC": "Obafemi Awolowo",
+    "optionD": "Ahmadu Bello",
+    "correctAnswer": "optionB"
+  },
+  {
+    "id": 23,
+    "question": "Who was Nigeria's first indigenous President?",
+    "optionA": "Nnamdi Azikiwe",
+    "optionB": "Abubakar Tafawa Balewa",
+    "optionC": "Yakubu Gowon",
+    "optionD": "Olusegun Obasanjo",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 24,
+    "question": "What are the colours of the Nigerian flag?",
+    "optionA": "White, blue and green",
+    "optionB": "Green, yellow and green",
+    "optionC": "Green, white and green",
+    "optionD": "Red, white and green",
+    "correctAnswer": "optionC"
+  },
+  {
+    "id": 25,
+    "question": "Who designed the Nigerian national flag?",
+    "optionA": "Taiwo Akinkunmi",
+    "optionB": "Wole Soyinka",
+    "optionC": "Nnamdi Azikiwe",
+    "optionD": "Chinua Achebe",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 26,
+    "question": "What does the white colour on the Nigerian flag symbolise?",
+    "optionA": "Strength",
+    "optionB": "Wealth",
+    "optionC": "Agriculture",
+    "optionD": "Peace and unity",
+    "correctAnswer": "optionD"
+  },
+  {
+    "id": 27,
+    "question": "What does the green colour on the Nigerian flag represent?",
+    "optionA": "Agriculture and natural wealth",
+    "optionB": "Peace",
+    "optionC": "The military",
+    "optionD": "The ocean",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 28,
+    "question": "Which body is responsible for administering the NYSC scheme?",
+    "optionA": "NYSC",
+    "optionB": "JAMB",
+    "optionC": "WAEC",
+    "optionD": "INEC",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 29,
+    "question": "Which Nigerian institution conducts the Unified Tertiary Matriculation Examination?",
+    "optionA": "NYSC",
+    "optionB": "JAMB",
+    "optionC": "NUC",
+    "optionD": "WAEC",
+    "correctAnswer": "optionB"
+  },
+  {
+    "id": 30,
+    "question": "What does JAMB stand for?",
+    "optionA": "Joint Association of Matriculation Boards",
+    "optionB": "Joint Academic Management Board",
+    "optionC": "Junior Admissions and Matriculation Board",
+    "optionD": "Joint Admissions and Matriculation Board",
+    "correctAnswer": "optionD"
+  },
+  {
+    "id": 31,
+    "question": "What does NUC stand for?",
+    "optionA": "National Universities Commission",
+    "optionB": "Nigerian University Council",
+    "optionC": "National University Council",
+    "optionD": "Nigerian Universities Committee",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 32,
+    "question": "Which organisation is responsible for conducting elections in Nigeria?",
+    "optionA": "NYSC",
+    "optionB": "INEC",
+    "optionC": "EFCC",
+    "optionD": "NPC",
+    "correctAnswer": "optionB"
+  },
+  {
+    "id": 33,
+    "question": "What does INEC stand for?",
+    "optionA": "Independent National Electoral Commission",
+    "optionB": "Independent Nigerian Electoral Council",
+    "optionC": "International National Electoral Commission",
+    "optionD": "Independent National Election Council",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 34,
+    "question": "Which arm of government makes laws in Nigeria?",
+    "optionA": "Executive",
+    "optionB": "Judiciary",
+    "optionC": "Legislature",
+    "optionD": "Civil Service",
+    "correctAnswer": "optionC"
+  },
+  {
+    "id": 35,
+    "question": "What are the three arms of government in Nigeria?",
+    "optionA": "Executive, Legislature and Judiciary",
+    "optionB": "Police, Army and Navy",
+    "optionC": "Senate, Police and Judiciary",
+    "optionD": "Executive, Military and Civil Service",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 36,
+    "question": "What is the highest court in Nigeria?",
+    "optionA": "Federal High Court",
+    "optionB": "Court of Appeal",
+    "optionC": "Supreme Court",
+    "optionD": "High Court",
+    "correctAnswer": "optionC"
+  },
+  {
+    "id": 37,
+    "question": "Which city is the largest commercial city in Nigeria?",
+    "optionA": "Abuja",
+    "optionB": "Lagos",
+    "optionC": "Ibadan",
+    "optionD": "Enugu",
+    "correctAnswer": "optionB"
+  },
+  {
+    "id": 38,
+    "question": "Which Nigerian state is known as the 'Centre of Excellence'?",
+    "optionA": "Oyo State",
+    "optionB": "Lagos State",
+    "optionC": "Ogun State",
+    "optionD": "Kano State",
+    "correctAnswer": "optionB"
+  },
+  {
+    "id": 39,
+    "question": "Which Nigerian state is known as the 'Pace Setter State'?",
+    "optionA": "Oyo State",
+    "optionB": "Osun State",
+    "optionC": "Ogun State",
+    "optionD": "Kwara State",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 40,
+    "question": "What is the highest mountain in Nigeria?",
+    "optionA": "Mount Everest",
+    "optionB": "Mount Kilimanjaro",
+    "optionC": "Chappal Waddi",
+    "optionD": "Obudu Mountain",
+    "correctAnswer": "optionC"
+  },
+  {
+    "id": 41,
+    "question": "Which river is one of the major rivers in Nigeria?",
+    "optionA": "River Niger",
+    "optionB": "River Thames",
+    "optionC": "River Nile",
+    "optionD": "River Congo",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 42,
+    "question": "Which of the following is a major ethnic group in Nigeria?",
+    "optionA": "Yoruba",
+    "optionB": "Zulu",
+    "optionC": "Berber",
+    "optionD": "Amhara",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 43,
+    "question": "What is the national anthem of Nigeria currently titled?",
+    "optionA": "Arise, O Compatriots",
+    "optionB": "Nigeria, We Hail Thee",
+    "optionC": "One Nigeria",
+    "optionD": "Arise Nigeria",
+    "correctAnswer": "optionB"
+  },
+  {
+    "id": 44,
+    "question": "Which organisation is primarily responsible for fighting drug trafficking and abuse in Nigeria?",
+    "optionA": "NDLEA",
+    "optionB": "FRSC",
+    "optionC": "NYSC",
+    "optionD": "NIMASA",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 45,
+    "question": "What does NDLEA stand for?",
+    "optionA": "Nigerian Drug Law Enforcement Agency",
+    "optionB": "Nigerian Drug Law Enforcement Association",
+    "optionC": "National Drugs and Law Enforcement Authority",
+    "optionD": "National Drug Law Enforcement Agency",
+    "correctAnswer": "optionD"
+  },
+  {
+    "id": 46,
+    "question": "What does FRSC stand for?",
+    "optionA": "Federal Road Safety Corps",
+    "optionB": "Federal Road Service Commission",
+    "optionC": "Federal Road Security Corps",
+    "optionD": "Federal Roads Safety Commission",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 47,
+    "question": "Which agency is responsible for combating economic and financial crimes in Nigeria?",
+    "optionA": "EFCC",
+    "optionB": "NDLEA",
+    "optionC": "FRSC",
+    "optionD": "NCC",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 48,
+    "question": "What does EFCC stand for?",
+    "optionA": "Economic and Financial Crimes Commission",
+    "optionB": "Economic and Federal Crimes Commission",
+    "optionC": "Economic Financial Control Commission",
+    "optionD": "Economic and Fiscal Crimes Council",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 49,
+    "question": "Which of the following best describes the spirit of NYSC?",
+    "optionA": "National integration",
+    "optionB": "Political campaigning",
+    "optionC": "Military recruitment",
+    "optionD": "University admission",
+    "correctAnswer": "optionA"
+  },
+  {
+    "id": 50,
+    "question": "Which of the following is an important quality expected of a corps member?",
+    "optionA": "Indiscipline",
+    "optionB": "Patriotism",
+    "optionC": "Dishonesty",
+    "optionD": "Disobedience",
+    "correctAnswer": "optionB"
+  }
+]
