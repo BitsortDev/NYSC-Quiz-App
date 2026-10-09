@@ -31,4 +31,12 @@ To view the live project on vercel https://nysc-quiz-app.vercel.app/
 (About Page)<img width="1525" height="734" alt="image" src="https://github.com/user-attachments/assets/2b839471-19c6-4e28-b8bb-5259dd573d07" />
 (How its work Page)<img width="1512" height="729" alt="image" src="https://github.com/user-attachments/assets/c51d508f-9ca4-4818-9167-3d54382893a8" />
 
+### Mobile View
+(Nav Bar Section) 
+(Home page) 
+(Quiz page)
+(Quiz interaction)
+(About page) 
+(Result page) 
+(How its work page) 
 
