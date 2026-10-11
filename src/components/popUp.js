@@ -7,47 +7,60 @@ function PopUp({ isOpen, onClose, onProceed }) {
 
   if (!isOpen) return null;
 
-  async function handleSubmit(e) {
+
+  
+async function handleSubmit(e) {
   e.preventDefault();
 
   const cleanName = name.trim();
-
- 
 
   if (!cleanName) {
     setError("Please enter your name to continue.");
     return;
   }
 
-   sessionStorage.setItem("playerName", cleanName);
-  console.log(cleanName)
-  
+  sessionStorage.setItem("playerName", cleanName);
 
   try {
-    const response = await fetch(`${process.env.REACT_APP_API_URL}/api/v1/users`, {
-      method: "POST",
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 10000);
 
-      headers: {
-        "Content-Type": "application/json",
-      },
+    let response;
 
-      body: JSON.stringify({
-        name: cleanName,
-      }),
-    });
+    try {
+      response = await fetch(
+        `${process.env.REACT_APP_API_URL}/api/v1/users`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ name: cleanName }),
+          signal: controller.signal,
+        }
+      );
+    } finally {
+      clearTimeout(timeout);
+    }
 
     if (!response.ok) {
       throw new Error("Unable to save your name");
     }
 
-    onProceed(cleanName, window.location.href = "/quiz");
+    onProceed(cleanName);
+    window.location.href = "/quiz";
   } catch (error) {
-    console.error(error);
-    setError("Something went wrong. Please try again.");
+    console.error("Saving user failed:", error);
+
+    if (error.name === "AbortError") {
+      setError("The server took too long to respond. Please try again.");
+    } else {
+      setError("Something went wrong. Please try again.");
+    }
   }
 }
 
-  
+
 
   return (
     <div
