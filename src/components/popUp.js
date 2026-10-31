@@ -44,21 +44,25 @@ async function handleSubmit(e) {
     }
 
     if (!response.ok) {
-      throw new Error("Unable to save your name");
-    }
+    const errorData = await response.json().catch(() => ({}));
+
+    throw new Error(
+    errorData.error || `Server error: ${response.status}`
+     );
+  }
 
     onProceed(cleanName);
-    window.location.href = "/quiz";
   } catch (error) {
     console.error("Saving user failed:", error);
 
     if (error.name === "AbortError") {
       setError("The server took too long to respond. Please try again.");
-    } else {
-      setError("Something went wrong. Please try again.");
+    } 
+     else {
+  setError(error.message || "Something went wrong. Please try again.");
+    }
     }
   }
-}
 
 
 
@@ -134,7 +138,6 @@ async function handleSubmit(e) {
 
           <button
             type="submit"
-            onClick={handleSubmit}
             className="mt-5 flex w-full items-center justify-center gap-3 rounded-xl bg-[#006B45] px-5 py-4 text-sm font-bold text-white transition duration-200 hover:bg-[#004F34] hover:shadow-lg active:scale-[0.98]"
           >
             Proceed to Quiz

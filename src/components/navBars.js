@@ -8,12 +8,11 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navigate = useNavigate();
+  const location = useLocation();
   
-  function handleProceed(name) {
-  localStorage.setItem("playerName", name);
-
+function handleProceed(name) {
+  sessionStorage.setItem("playerName", name);
   setIsPopupOpen(false);
-
   navigate("/quiz");
 }
 
@@ -133,14 +132,16 @@ function Navbar() {
               </a>
             ))}
 
-            <a
-              href="/quiz"
-              onClick={() => setMenuOpen(false)}
-              className="mt-3 flex min-h-12 items-center justify-center rounded-xl bg-[#006B45] px-6 text-sm font-bold text-white transition hover:bg-[#004F34]"
-            >
-              Start Quiz
+             <button
+               type="button"
+               onClick={() => {
+                   setMenuOpen(false);
+                   setIsPopupOpen(true);
+         }}
+               className="mt-3 flex min-h-12 w-full items-center justify-center rounded-xl bg-[#006B45] px-6 text-sm font-bold text-white transition hover:bg-[#004F34]"
+             >Start Quiz
               <span className="ml-2" aria-hidden="true">→</span>
-            </a>
+           </button>
           </div>
         </div>
         

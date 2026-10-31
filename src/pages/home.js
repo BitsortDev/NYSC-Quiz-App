@@ -1,15 +1,17 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import NyscImage from "../assets/khaki.png";
 import PopUp from "../components/popUp";
 
 function Home() {
     const [isPopupOpen, setIsPopupOpen] = useState(false);
+    const navigate = useNavigate();
 
-  const handleProceed = () => {
-    window.history.pushState({}, "", "/quiz");
+    const handleProceed = (name) => {
+    sessionStorage.setItem("playerName", name);
     setIsPopupOpen(false);
-
-  };
+     navigate("/quiz");
+    };
 
   return (
     <main className="min-h-screen bg-[#f3faf6] text-[#10201a]">
