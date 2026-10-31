@@ -7,18 +7,16 @@ function Navbar() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navigate = useNavigate();
-  const location = useLocation();
+    const location = useLocation();
+    const navigate = useNavigate();
   
 function handleProceed(name) {
   sessionStorage.setItem("playerName", name);
   setIsPopupOpen(false);
   navigate("/quiz");
 }
-
+ 
   const HandleClick = (e) => {
-    const location = useLocation();
-    const navigate = useNavigate();
 
     if (location.pathname==="/quiz") {
       const confirmLeave = window.confirm(
@@ -29,7 +27,7 @@ function handleProceed(name) {
         return;
       }
     }
-    navigate('/')
+    navigate('/') 
   }
   
 
