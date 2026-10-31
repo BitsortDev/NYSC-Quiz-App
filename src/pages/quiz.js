@@ -1,9 +1,17 @@
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { useBlocker, useNavigate } from "react-router-dom";
 import questionData from "../data/questions.json";
 
 const Quiz = () => {
   const navigate = useNavigate();
+  const quizSubmittedRef = useRef(false);
+
+   const blocker = useBlocker(
+  ({ currentLocation, nextLocation }) =>
+    !quizSubmittedRef.current &&
+    currentLocation.pathname === "/quiz" &&
+    nextLocation.pathname !== "/quiz"
+  );
 
   const playerName = sessionStorage.getItem("playerName");
 
@@ -16,7 +24,7 @@ const Quiz = () => {
 
   useEffect(() => {
   const handleBeforeUnload = (event) => {
-    if (!timeUp) {
+    if (!quizSubmittedRef.current) {
       event.preventDefault();
       event.returnValue = "";
     }
@@ -27,7 +35,7 @@ const Quiz = () => {
   return () => {
     window.removeEventListener("beforeunload", handleBeforeUnload);
   };
-  }, [timeUp]);
+  }, []);
 
 
   const getRandomQuestions = (questions, amount) => {
@@ -123,11 +131,9 @@ const Quiz = () => {
 
    
 
-    sessionStorage.setItem(
-      "quizResult",
-      JSON.stringify(savedResult)
-    );
+   sessionStorage.setItem("quizResult", JSON.stringify(savedResult));
 
+    quizSubmittedRef.current = true;
     navigate("/review");
   } catch (error) {
     console.error("Error saving result:", error);
@@ -385,8 +391,44 @@ const Quiz = () => {
           the National Youth Service Corps (NYSC).
           <p>Developed by BisortDev</p>
         </p>
+
+        {blocker.state === "blocked" && (
+  <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/60 px-4">
+    <div className="w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl">
+      <h2 className="text-xl font-bold text-[#102D23]">
+        Leave the quiz?
+      </h2>
+
+      <p className="mt-3 text-sm leading-relaxed text-gray-600">
+        Your quiz is still in progress. If you leave now,
+        your current progress and answers will be lost.
+        Are you sure you want to continue?
+      </p>
+
+      <div className="mt-6 flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
+        <button
+          type="button"
+          onClick={() => blocker.reset()}
+          className="rounded-xl border border-gray-300 px-5 py-3 font-semibold text-gray-700"
+        >
+          Stay in Quiz
+        </button>
+
+        <button
+          type="button"
+          onClick={() => blocker.proceed()}
+          className="rounded-xl bg-red-600 px-5 py-3 font-semibold text-white hover:bg-red-700"
+        >
+          Leave Quiz
+        </button>
       </div>
     </div>
+  </div> 
+)}
+      </div>
+    </div>
+
+    
   );
 };
 
